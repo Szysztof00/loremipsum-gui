@@ -1,0 +1,1 @@
+import{_ as t,T as s,c as o,o as n}from"./index-1a46eacc.js";const c={setup(){return{Tr:s}}},_=["innerHTML"];function r(e,a,u,d,l,p){return n(),o("article",{class:"col-6 col-s-9",id:"content",innerHTML:e.$t("aboutus")},null,8,_)}const f=t(c,[["render",r],["__scopeId","data-v-4c55b40d"]]);export{f as default};
