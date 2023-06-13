@@ -1,11 +1,25 @@
 <template>
-    <article class="col-6 col-s-9" id="content">
-        <h1>O nas</h1>
-            <p>We are a leading provider of specialist utility and infrastructure support services. We work in partnership with our customers across both regulated and non-regulated environments to optimise asset performance, supporting the security, resiliency and longevity of their critical networks.
-
-We combine traditional services with market-leading digital asset management solutions, enhancing our customers’ decision-making process through a system thinking approach; resulting in improved asset efficiency and cost certainty.  <img src="../img/zdjecie.png" alt="zdjecie" style="float:right; margin-top :5pt; margin-left: 5pt" width='100'>With national coverage capability, we’re always on-hand to respond to your planned and reactive needs, ensuring your network remains operational every day, every hour, no matter what. <img src="../img/zdjecie.png" alt="zdjecie" style="float:left; margin-top :5pt; margin-right: 5pt" width='100'>Our forward thinking, innovative mindset is embedded in our culture, and we remain fully focussed on building long-standing customer relationships, at all times maintaining our reputation as a safe, trustworthy and reliable partner. 
-Supported by our smart systems, innovative ways of working and cutting-edge technology, we ensure we deliver on time, on budget and above all safely. Integer et tempus risus. Quisque imperdiet odio at ante luctus, ut vulputate sem tempus. In hac habitasse platea dictumst. Curabitur a turpis ipsum. Morbi est ex, viverra a imperdiet ac, dignissim id justo. Phasellus ac mattis leo. Sed tempor pretium tortor sagittis ornare. Ut sollicitudin elit ut justo euismod finibus. Quisque viverra accumsan ligula, non condimentum erat luctus nec. Etiam et condimentum nunc. Suspendisse id ultricies odio, at sagittis erat. Aenean non elementum erat, in pellentesque eros. Nunc luctus turpis in nisi venenatis scelerisque. Praesent efficitur ante non dui finibus mattis. Praesent sed sapien sem.
-<br><br>
-            </p>
+    <article class="col-6 col-s-9" id="content" v-html="$t('aboutus')">
         </article>
 </template>
+
+<script>
+import Tr from "@/i18n/translation";
+
+export default {
+  setup() {
+    return { Tr }
+  }
+};
+</script>
+
+<style scoped>
+:deep(p){
+    padding-bottom: 10px;
+}
+
+:deep(.right){
+    text-align: right;
+}
+
+</style>

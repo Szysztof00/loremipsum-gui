@@ -11,12 +11,15 @@ footer {
   color: white;
   text-align: center;
   font-size: 12px;
-  padding: 5px;
   box-shadow: 2px 2px 5px gray;
   border-radius: 5px;
   float: left;
   width: 100%;
   margin-bottom: 10px;
+  padding: 20px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 </style>

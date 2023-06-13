@@ -1,26 +1,38 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHashHistory, RouterView  } from 'vue-router'
+import Tr from "@/i18n/translation"
 
 const routes = [
+    {
+      path: "/:locale?",
+      component: RouterView,
+      beforeEnter: Tr.routeMiddleware,
+      children: [
         {
-            path: '/',
+            path: '',
             name: 'app',
             component: () => import('../views/DefaultPage.vue'),
         },
         {
-            path: '/aboutus',
+            path: 'aboutus',
             name: 'AboutUs',
             component: () => import('../views/AboutUs.vue'),
         },
         {
-            path: '/contact',
+            path: 'contact',
             name: 'Contact',
             component: () => import('../views/Contact.vue'),
-        }
-]
-
+        },
+        {
+          path: 'tasklist',
+          name: 'TaskList',
+          component: () => import('../views/TaskList.vue'),
+      }
+      ]
+    }
+  ]
 
 const router = createRouter({
-    history: createWebHashHistory('/loremIpsum/'),
+    history: createWebHashHistory(import.meta.env.VITE_BASE_URL),
     routes,
   });
   
