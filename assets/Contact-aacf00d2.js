@@ -1,1 +1,0 @@
-import{_ as n,T as e,c,o}from"./index-87f2dc50.js";const s={setup(){return{Tr:e}}},r=["innerHTML"];function a(t,l,_,i,p,u){return o(),c("article",{class:"col-6 col-s-9",id:"content",innerHTML:t.$t("contact")},null,8,r)}const f=n(s,[["render",a]]);export{f as default};
