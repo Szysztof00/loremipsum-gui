@@ -1,1 +1,0 @@
-import{_ as t,T as s,c as a,o as n}from"./index-9cf565e8.js";const o={setup(){return{Tr:s}}},_=["innerHTML"];function c(e,r,l,p,d,u){return n(),a("article",{class:"col-6 col-s-9",innerHTML:e.$t("homepage")},null,8,_)}const f=t(o,[["render",c],["__scopeId","data-v-412764d9"]]);export{f as default};
